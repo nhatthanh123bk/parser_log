@@ -16,23 +16,21 @@ object Main {
       PathFileLogsJson = config.getString("error.pathInputFile")
       PathFileDestination = config.getString("error.pathOutputFile")
     }
-
     val spark = SparkSession.builder()
       .appName("parse logs error")
       .master("local")
       .getOrCreate()
 
-    val parser = new Parser()
+    val parser = new ParserLogsError()
     var logsDf = parser.readFileLog(spark, PathFileLogsJson)
-    logsDf = parser.reDefiniteTypeColumn(logsDf)
-    logsDf = parser.parseRequestUriColumn(logsDf)
     logsDf = parser.parseTimestamp(logsDf)
+
+    val infoAllColumnError = new InfoAllColumnError()
+    logsDf = parser.reDefiniteTypeColumn(logsDf, infoAllColumnError)
+
+    val infoRequestUriError = new InfoRequestUriColumnError()
+    logsDf = parser.parseRequestUriColumn(logsDf, infoRequestUriError)
+
     parser.saveToParquet(logsDf,PathFileDestination)
-
-
-    logsDf.show(100,false)
-    logsDf.printSchema()
-    spark.stop()
   }
-
 }

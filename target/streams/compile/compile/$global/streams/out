@@ -1,0 +1,96 @@
+[0m[[0m[31merror[0m] [0m[0m/home/nhatthanh123bk/Desktop/parser_log/src/main/scala/com/fpt/parser/logtype/error/Parser.scala:9:7: class Parser needs to be abstract, since:[0m
+[0m[[0m[31merror[0m] [0m[0mit has 2 unimplemented members.[0m
+[0m[[0m[31merror[0m] [0m[0m/** As seen from class Parser, the missing signatures are as follows.[0m
+[0m[[0m[31merror[0m] [0m[0m *  For convenience, these are usable as stub implementations.[0m
+[0m[[0m[31merror[0m] [0m[0m */[0m
+[0m[[0m[31merror[0m] [0m[0m  def parseRequestUriColumn(df: org.apache.spark.sql.DataFrame,infoRequestUri: com.fpt.parser.common.InfoRequestUriColumn): org.apache.spark.sql.DataFrame = ???[0m
+[0m[[0m[31merror[0m] [0m[0m  def reDefiniteTypeColumn(df: org.apache.spark.sql.DataFrame,infoAllColumn: com.fpt.parser.common.InfoAllColumn): org.apache.spark.sql.DataFrame = ???[0m
+[0m[[0m[31merror[0m] [0m[0mclass Parser() extends StepsParseLog {[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/nhatthanh123bk/Desktop/parser_log/src/main/scala/com/fpt/parser/logtype/error/Parser.scala:14:16: method reDefiniteTypeColumn overrides nothing.[0m
+[0m[[0m[31merror[0m] [0m[0mNote: the super classes of class Parser contain the following, non final members named reDefiniteTypeColumn:[0m
+[0m[[0m[31merror[0m] [0m[0mdef reDefiniteTypeColumn(df: org.apache.spark.sql.DataFrame,infoAllColumn: com.fpt.parser.common.InfoAllColumn): org.apache.spark.sql.DataFrame[0m
+[0m[[0m[31merror[0m] [0m[0m  override def reDefiniteTypeColumn(df: sql.DataFrame): sql.DataFrame = {[0m
+[0m[[0m[31merror[0m] [0m[0m               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/nhatthanh123bk/Desktop/parser_log/src/main/scala/com/fpt/parser/logtype/error/Parser.scala:53:16: method parseRequestUriColumn overrides nothing.[0m
+[0m[[0m[31merror[0m] [0m[0mNote: the super classes of class Parser contain the following, non final members named parseRequestUriColumn:[0m
+[0m[[0m[31merror[0m] [0m[0mdef parseRequestUriColumn(df: org.apache.spark.sql.DataFrame,infoRequestUri: com.fpt.parser.common.InfoRequestUriColumn): org.apache.spark.sql.DataFrame[0m
+[0m[[0m[31merror[0m] [0m[0m  override def parseRequestUriColumn(df: sql.DataFrame): sql.DataFrame = {[0m
+[0m[[0m[31merror[0m] [0m[0m               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/nhatthanh123bk/Desktop/parser_log/src/main/scala/com/fpt/parser/logtype/ping/Parser.scala:9:7: class Parser needs to be abstract, since:[0m
+[0m[[0m[31merror[0m] [0m[0mit has 2 unimplemented members.[0m
+[0m[[0m[31merror[0m] [0m[0m/** As seen from class Parser, the missing signatures are as follows.[0m
+[0m[[0m[31merror[0m] [0m[0m *  For convenience, these are usable as stub implementations.[0m
+[0m[[0m[31merror[0m] [0m[0m */[0m
+[0m[[0m[31merror[0m] [0m[0m  def parseRequestUriColumn(df: org.apache.spark.sql.DataFrame,infoRequestUri: com.fpt.parser.common.InfoRequestUriColumn): org.apache.spark.sql.DataFrame = ???[0m
+[0m[[0m[31merror[0m] [0m[0m  def reDefiniteTypeColumn(df: org.apache.spark.sql.DataFrame,infoAllColumn: com.fpt.parser.common.InfoAllColumn): org.apache.spark.sql.DataFrame = ???[0m
+[0m[[0m[31merror[0m] [0m[0mclass Parser() extends StepsParseLog {[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/nhatthanh123bk/Desktop/parser_log/src/main/scala/com/fpt/parser/logtype/ping/Parser.scala:14:16: method reDefiniteTypeColumn overrides nothing.[0m
+[0m[[0m[31merror[0m] [0m[0mNote: the super classes of class Parser contain the following, non final members named reDefiniteTypeColumn:[0m
+[0m[[0m[31merror[0m] [0m[0mdef reDefiniteTypeColumn(df: org.apache.spark.sql.DataFrame,infoAllColumn: com.fpt.parser.common.InfoAllColumn): org.apache.spark.sql.DataFrame[0m
+[0m[[0m[31merror[0m] [0m[0m  override def reDefiniteTypeColumn(df: sql.DataFrame): sql.DataFrame = {[0m
+[0m[[0m[31merror[0m] [0m[0m               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/nhatthanh123bk/Desktop/parser_log/src/main/scala/com/fpt/parser/logtype/ping/Parser.scala:53:16: method parseRequestUriColumn overrides nothing.[0m
+[0m[[0m[31merror[0m] [0m[0mNote: the super classes of class Parser contain the following, non final members named parseRequestUriColumn:[0m
+[0m[[0m[31merror[0m] [0m[0mdef parseRequestUriColumn(df: org.apache.spark.sql.DataFrame,infoRequestUri: com.fpt.parser.common.InfoRequestUriColumn): org.apache.spark.sql.DataFrame[0m
+[0m[[0m[31merror[0m] [0m[0m  override def parseRequestUriColumn(df: sql.DataFrame): sql.DataFrame = {[0m
+[0m[[0m[31merror[0m] [0m[0m               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/nhatthanh123bk/Desktop/parser_log/src/main/scala/com/fpt/parser/logtype/play/Parser.scala:9:7: class Parser needs to be abstract, since:[0m
+[0m[[0m[31merror[0m] [0m[0mit has 2 unimplemented members.[0m
+[0m[[0m[31merror[0m] [0m[0m/** As seen from class Parser, the missing signatures are as follows.[0m
+[0m[[0m[31merror[0m] [0m[0m *  For convenience, these are usable as stub implementations.[0m
+[0m[[0m[31merror[0m] [0m[0m */[0m
+[0m[[0m[31merror[0m] [0m[0m  def parseRequestUriColumn(df: org.apache.spark.sql.DataFrame,infoRequestUri: com.fpt.parser.common.InfoRequestUriColumn): org.apache.spark.sql.DataFrame = ???[0m
+[0m[[0m[31merror[0m] [0m[0m  def reDefiniteTypeColumn(df: org.apache.spark.sql.DataFrame,infoAllColumn: com.fpt.parser.common.InfoAllColumn): org.apache.spark.sql.DataFrame = ???[0m
+[0m[[0m[31merror[0m] [0m[0mclass Parser() extends StepsParseLog {[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/nhatthanh123bk/Desktop/parser_log/src/main/scala/com/fpt/parser/logtype/play/Parser.scala:14:16: method reDefiniteTypeColumn overrides nothing.[0m
+[0m[[0m[31merror[0m] [0m[0mNote: the super classes of class Parser contain the following, non final members named reDefiniteTypeColumn:[0m
+[0m[[0m[31merror[0m] [0m[0mdef reDefiniteTypeColumn(df: org.apache.spark.sql.DataFrame,infoAllColumn: com.fpt.parser.common.InfoAllColumn): org.apache.spark.sql.DataFrame[0m
+[0m[[0m[31merror[0m] [0m[0m  override def reDefiniteTypeColumn(df: sql.DataFrame): sql.DataFrame = {[0m
+[0m[[0m[31merror[0m] [0m[0m               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/nhatthanh123bk/Desktop/parser_log/src/main/scala/com/fpt/parser/logtype/play/Parser.scala:53:16: method parseRequestUriColumn overrides nothing.[0m
+[0m[[0m[31merror[0m] [0m[0mNote: the super classes of class Parser contain the following, non final members named parseRequestUriColumn:[0m
+[0m[[0m[31merror[0m] [0m[0mdef parseRequestUriColumn(df: org.apache.spark.sql.DataFrame,infoRequestUri: com.fpt.parser.common.InfoRequestUriColumn): org.apache.spark.sql.DataFrame[0m
+[0m[[0m[31merror[0m] [0m[0m  override def parseRequestUriColumn(df: sql.DataFrame): sql.DataFrame = {[0m
+[0m[[0m[31merror[0m] [0m[0m               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/nhatthanh123bk/Desktop/parser_log/src/main/scala/com/fpt/parser/logtype/search/Parser.scala:9:7: class Parser needs to be abstract, since:[0m
+[0m[[0m[31merror[0m] [0m[0mit has 2 unimplemented members.[0m
+[0m[[0m[31merror[0m] [0m[0m/** As seen from class Parser, the missing signatures are as follows.[0m
+[0m[[0m[31merror[0m] [0m[0m *  For convenience, these are usable as stub implementations.[0m
+[0m[[0m[31merror[0m] [0m[0m */[0m
+[0m[[0m[31merror[0m] [0m[0m  def parseRequestUriColumn(df: org.apache.spark.sql.DataFrame,infoRequestUri: com.fpt.parser.common.InfoRequestUriColumn): org.apache.spark.sql.DataFrame = ???[0m
+[0m[[0m[31merror[0m] [0m[0m  def reDefiniteTypeColumn(df: org.apache.spark.sql.DataFrame,infoAllColumn: com.fpt.parser.common.InfoAllColumn): org.apache.spark.sql.DataFrame = ???[0m
+[0m[[0m[31merror[0m] [0m[0mclass Parser() extends StepsParseLog {[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/nhatthanh123bk/Desktop/parser_log/src/main/scala/com/fpt/parser/logtype/search/Parser.scala:14:16: method reDefiniteTypeColumn overrides nothing.[0m
+[0m[[0m[31merror[0m] [0m[0mNote: the super classes of class Parser contain the following, non final members named reDefiniteTypeColumn:[0m
+[0m[[0m[31merror[0m] [0m[0mdef reDefiniteTypeColumn(df: org.apache.spark.sql.DataFrame,infoAllColumn: com.fpt.parser.common.InfoAllColumn): org.apache.spark.sql.DataFrame[0m
+[0m[[0m[31merror[0m] [0m[0m  override def reDefiniteTypeColumn(df: sql.DataFrame): sql.DataFrame = {[0m
+[0m[[0m[31merror[0m] [0m[0m               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/nhatthanh123bk/Desktop/parser_log/src/main/scala/com/fpt/parser/logtype/search/Parser.scala:53:16: method parseRequestUriColumn overrides nothing.[0m
+[0m[[0m[31merror[0m] [0m[0mNote: the super classes of class Parser contain the following, non final members named parseRequestUriColumn:[0m
+[0m[[0m[31merror[0m] [0m[0mdef parseRequestUriColumn(df: org.apache.spark.sql.DataFrame,infoRequestUri: com.fpt.parser.common.InfoRequestUriColumn): org.apache.spark.sql.DataFrame[0m
+[0m[[0m[31merror[0m] [0m[0m  override def parseRequestUriColumn(df: sql.DataFrame): sql.DataFrame = {[0m
+[0m[[0m[31merror[0m] [0m[0m               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/nhatthanh123bk/Desktop/parser_log/src/main/scala/com/fpt/parser/logtype/view/Parser.scala:9:7: class Parser needs to be abstract, since:[0m
+[0m[[0m[31merror[0m] [0m[0mit has 2 unimplemented members.[0m
+[0m[[0m[31merror[0m] [0m[0m/** As seen from class Parser, the missing signatures are as follows.[0m
+[0m[[0m[31merror[0m] [0m[0m *  For convenience, these are usable as stub implementations.[0m
+[0m[[0m[31merror[0m] [0m[0m */[0m
+[0m[[0m[31merror[0m] [0m[0m  def parseRequestUriColumn(df: org.apache.spark.sql.DataFrame,infoRequestUri: com.fpt.parser.common.InfoRequestUriColumn): org.apache.spark.sql.DataFrame = ???[0m
+[0m[[0m[31merror[0m] [0m[0m  def reDefiniteTypeColumn(df: org.apache.spark.sql.DataFrame,infoAllColumn: com.fpt.parser.common.InfoAllColumn): org.apache.spark.sql.DataFrame = ???[0m
+[0m[[0m[31merror[0m] [0m[0mclass Parser() extends StepsParseLog {[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/nhatthanh123bk/Desktop/parser_log/src/main/scala/com/fpt/parser/logtype/view/Parser.scala:14:16: method reDefiniteTypeColumn overrides nothing.[0m
+[0m[[0m[31merror[0m] [0m[0mNote: the super classes of class Parser contain the following, non final members named reDefiniteTypeColumn:[0m
+[0m[[0m[31merror[0m] [0m[0mdef reDefiniteTypeColumn(df: org.apache.spark.sql.DataFrame,infoAllColumn: com.fpt.parser.common.InfoAllColumn): org.apache.spark.sql.DataFrame[0m
+[0m[[0m[31merror[0m] [0m[0m  override def reDefiniteTypeColumn(df: sql.DataFrame): sql.DataFrame = {[0m
+[0m[[0m[31merror[0m] [0m[0m               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/nhatthanh123bk/Desktop/parser_log/src/main/scala/com/fpt/parser/logtype/view/Parser.scala:53:16: method parseRequestUriColumn overrides nothing.[0m
+[0m[[0m[31merror[0m] [0m[0mNote: the super classes of class Parser contain the following, non final members named parseRequestUriColumn:[0m
+[0m[[0m[31merror[0m] [0m[0mdef parseRequestUriColumn(df: org.apache.spark.sql.DataFrame,infoRequestUri: com.fpt.parser.common.InfoRequestUriColumn): org.apache.spark.sql.DataFrame[0m
+[0m[[0m[31merror[0m] [0m[0m  override def parseRequestUriColumn(df: sql.DataFrame): sql.DataFrame = {[0m
+[0m[[0m[31merror[0m] [0m[0m               ^[0m
+[0m[[0m[31merror[0m] [0m[0m15 errors found[0m

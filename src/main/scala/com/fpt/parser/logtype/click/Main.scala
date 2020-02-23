@@ -16,17 +16,21 @@ object Main {
       PathFileLogsJson = config.getString("click.pathInputFile")
       PathFileDestination = config.getString("click.pathOutputFile")
     }
-
     val spark = SparkSession.builder()
       .appName("parse logs click")
       .master("local")
       .getOrCreate()
 
-    val parser = new Parser()
+    val parser = new ParserLogsClick()
     var logsDf = parser.readFileLog(spark, PathFileLogsJson)
-    logsDf = parser.reDefiniteTypeColumn(logsDf)
-    logsDf = parser.parseRequestUriColumn(logsDf)
     logsDf = parser.parseTimestamp(logsDf)
+
+    val infoAllColumnClick = new InfoAllColumnClick()
+    logsDf = parser.reDefiniteTypeColumn(logsDf, infoAllColumnClick)
+
+    val infoRequestUriClick = new InfoRequestUriColumnClick()
+    logsDf = parser.parseRequestUriColumn(logsDf, infoRequestUriClick)
+
     parser.saveToParquet(logsDf,PathFileDestination)
   }
 }

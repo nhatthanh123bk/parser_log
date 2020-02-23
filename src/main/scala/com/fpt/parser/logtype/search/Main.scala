@@ -16,23 +16,21 @@ object Main {
       PathFileLogsJson = config.getString("search.pathInputFile")
       PathFileDestination = config.getString("search.pathOutputFile")
     }
-
     val spark = SparkSession.builder()
       .appName("parse logs search")
       .master("local")
       .getOrCreate()
 
-    val parser = new Parser()
+    val parser = new ParserLogsSearch()
     var logsDf = parser.readFileLog(spark, PathFileLogsJson)
-    logsDf = parser.reDefiniteTypeColumn(logsDf)
-    logsDf = parser.parseRequestUriColumn(logsDf)
     logsDf = parser.parseTimestamp(logsDf)
+
+    val infoAllColumnSearch = new InfoAllColumnSearch()
+    logsDf = parser.reDefiniteTypeColumn(logsDf, infoAllColumnSearch)
+
+    val infoRequestUriSearch = new InfoRequestUriColumnSearch()
+    logsDf = parser.parseRequestUriColumn(logsDf, infoRequestUriSearch)
+
     parser.saveToParquet(logsDf,PathFileDestination)
-
-
-    logsDf.show(100,false)
-    logsDf.printSchema()
-    spark.stop()
   }
-
 }

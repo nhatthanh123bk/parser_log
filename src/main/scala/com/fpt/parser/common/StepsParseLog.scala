@@ -5,8 +5,8 @@ import org.apache.spark.sql.SparkSession
 
 trait StepsParseLog {
   def readFileLog(spark: SparkSession, path: String): sql.DataFrame
-  def reDefiniteTypeColumn(df: sql.DataFrame): sql.DataFrame
-  def parseRequestUriColumn(df: sql.DataFrame): sql.DataFrame
+  def reDefiniteTypeColumn(df: sql.DataFrame, infoAllColumn: InfoAllColumn): sql.DataFrame
+  def parseRequestUriColumn(df: sql.DataFrame, infoRequestUri: InfoRequestUriColumn): sql.DataFrame
   def parseTimestamp(df: sql.DataFrame): sql.DataFrame
   def saveToParquet(df: sql.DataFrame, path: String): Unit
 }
